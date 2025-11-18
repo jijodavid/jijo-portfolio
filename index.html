@@ -4,66 +4,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jijo David | Senior Software Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/profile.jpg">
 </head>
 <body>
-  <header id="hero">
+
+  <header class="hero">
     <div class="container">
-      <h1>Jijo David</h1>
-      <p>Senior Software Engineer | Doha, Qatar</p>
-      <div class="contact">
-        <a href="mailto:informtojijo@gmail.com">informtojijo@gmail.com</a>
-        <span> | </span>
-        <a href="tel:+97431295329">+974 3129 5329</a>
+      <img src="assets/profile.jpg" alt="Profile Photo" class="profile-pic">
+      <h1 class="name">Jijo David</h1>
+      <p class="role">Senior Software Engineer</p>
+      <p class="location">📍 Doha, Qatar</p>
+      <div class="social-links">
+        <a href="mailto:informtojijo@gmail.com" target="_blank">📧 Email</a>
+        <a href="https://www.linkedin.com/in/jijodavid007" target="_blank">🔗 LinkedIn</a>
+        <a href="tel:+97431295329">📱 Phone</a>
       </div>
     </div>
   </header>
 
   <main class="container">
-    <section id="about">
+    <section id="about" class="card">
       <h2>About Me</h2>
-      <p>I am a seasoned Software Engineer with over 8 years of hands-on experience in ERP development, project management, and software design. I specialize in building scalable systems and simplifying complex business needs into intuitive software. I bring leadership, creativity, and a client-centric approach to every project.</p>
+      <p>I have over 8 years of experience specializing in ERP development, database architecture, and project management. I love solving complex technical challenges and designing scalable systems that empower businesses.</p>
     </section>
-    
-    <section id="skills">
-      <h2>Core Skills</h2>
-      <ul class="skills-list">
-        <li><strong>Programming:</strong> PL/SQL, Python, JavaScript</li>
+
+    <section id="experience" class="card">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Senior Software Engineer</h3>
+          <span>Cortana Innovative Technologies | 2018 – Present</span>
+          <p>Lead software development, ERP deployment, and client-facing technical solutions including full-stack database and UI design.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Software Engineer</h3>
+          <span>Cortana Innovative Technologies | 2016 – 2018</span>
+          <p>Developed custom ERP modules, trained clients, and supported post-deployment operations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Technical Skills</h2>
+      <ul class="skills">
+        <li><strong>Languages:</strong> PL/SQL, Python, JavaScript</li>
         <li><strong>Databases:</strong> Oracle 11g/12c, PostgreSQL</li>
-        <li><strong>Tools:</strong> Oracle Forms & Reports, JasperReports, WebLogic</li>
-        <li><strong>Other:</strong> Software Design, DB Design, Project Management</li>
+        <li><strong>Tools:</strong> Oracle Forms, Jasper Reports, WebLogic</li>
+        <li><strong>Concepts:</strong> DB Design, System Architecture, ERP Customization</li>
       </ul>
     </section>
 
-    <section id="experience">
-      <h2>Professional Experience</h2>
-      <div class="job">
-        <h3>Senior Software Engineer</h3>
-        <p><strong>Cortana Innovative Technologies</strong> | 2018 – Present</p>
-        <p>Lead software development and database architecture efforts with a focus on ERP systems. Managed full project lifecycles, from client consultation to deployment and support.</p>
-      </div>
-      <div class="job">
-        <h3>Software Engineer</h3>
-        <p><strong>Cortana Innovative Technologies</strong> | 2016 – 2018</p>
-        <p>Designed and developed business applications, facilitated client training, and assisted in technical support and ERP customizations.</p>
-      </div>
-    </section>
-
-    <section id="education">
+    <section id="education" class="card">
       <h2>Education</h2>
-      <p><strong>B.Tech in Computer Science Engineering</strong> — Government College of Engineering, Karunagappally (2012 – 2015)</p>
-      <p><strong>Diploma in Computer Hardware Maintenance</strong> — Model Polytechnic College, Karunagappally (2009 – 2012)</p>
+      <ul>
+        <li><strong>B.Tech in Computer Science Engineering</strong> — Government College of Engineering, Karunagappally (2012 – 2015)</li>
+        <li><strong>Diploma in Computer Hardware Maintenance</strong> — Model Polytechnic College, Karunagappally (2009 – 2012)</li>
+      </ul>
     </section>
 
-    <section id="languages">
+    <section id="languages" class="card">
       <h2>Languages</h2>
       <p>English, Spanish, Malayalam, Tamil, Hindi (Basic)</p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Jijo David | Built with 💻 & ☕</p>
+    <p>&copy; 2025 Jijo David — Built with 💻 and ☕</p>
   </footer>
+
 </body>
 </html>
