@@ -5,74 +5,378 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jijo David | Senior Software Engineer</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="icon" href="assets/profile.jpg">
 </head>
 <body>
 
   <header class="hero">
-    <div class="container">
-      <img src="assets/profile.jpg" alt="Profile Photo" class="profile-pic">
-      <h1 class="name">Jijo David</h1>
-      <p class="role">Senior Software Engineer</p>
-      <p class="location">📍 Doha, Qatar</p>
-      <div class="social-links">
-        <a href="mailto:informtojijo@gmail.com" target="_blank">📧 Email</a>
-        <a href="https://www.linkedin.com/in/jijodavid007" target="_blank">🔗 LinkedIn</a>
-        <a href="tel:+97431295329">📱 Phone</a>
+    <div class="container hero-content">
+      <img src="assets/profile.jpg" alt="Profile Photo" class="profile-pic fade-in">
+      <h1 class="name fade-in delay-1">Jijo David</h1>
+      <p class="role fade-in delay-1">Senior Software Engineer</p>
+      <p class="location fade-in delay-1"><i class="fas fa-map-marker-alt"></i> Doha, Qatar</p>
+      <div class="social-links fade-in delay-2">
+        <a href="mailto:informtojijo@gmail.com" target="_blank" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jijodavid007" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="tel:+97431295329" title="Phone">
+          <i class="fas fa-phone"></i>
+        </a>
+        <a href="#" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#" title="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
       </div>
+      <a href="#about" class="scroll-indicator fade-in delay-3">
+        <span>Scroll Down</span>
+        <i class="fas fa-chevron-down"></i>
+      </a>
     </div>
   </header>
 
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">
+        <span>JD</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#languages">Languages</a></li>
+      </ul>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
   <main class="container">
-    <section id="about" class="card">
+    <section id="about" class="card fade-in">
       <h2>About Me</h2>
       <p>I have over 8 years of experience specializing in ERP development, database architecture, and project management. I love solving complex technical challenges and designing scalable systems that empower businesses.</p>
-    </section>
-
-    <section id="experience" class="card">
-      <h2>Experience</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <h3>Senior Software Engineer</h3>
-          <span>Cortana Innovative Technologies | 2018 – Present</span>
-          <p>Lead software development, ERP deployment, and client-facing technical solutions including full-stack database and UI design.</p>
+      <div class="about-highlights">
+        <div class="highlight">
+          <i class="fas fa-database"></i>
+          <h3>ERP Development</h3>
+          <p>Custom solutions for business processes</p>
         </div>
-        <div class="timeline-item">
-          <h3>Software Engineer</h3>
-          <span>Cortana Innovative Technologies | 2016 – 2018</span>
-          <p>Developed custom ERP modules, trained clients, and supported post-deployment operations.</p>
+        <div class="highlight">
+          <i class="fas fa-code"></i>
+          <h3>Software Engineering</h3>
+          <p>Full-stack development expertise</p>
+        </div>
+        <div class="highlight">
+          <i class="fas fa-project-diagram"></i>
+          <h3>System Architecture</h3>
+          <p>Scalable and efficient designs</p>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="card">
+    <section id="experience" class="card fade-in">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>Senior Software Engineer</h3>
+            <span class="timeline-date">2018 – Present</span>
+            <span class="timeline-company">Cortana Innovative Technologies</span>
+            <p>Lead software development, ERP deployment, and client-facing technical solutions including full-stack database and UI design.</p>
+            <div class="timeline-tags">
+              <span>PL/SQL</span>
+              <span>Oracle Forms</span>
+              <span>ERP</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>Software Engineer</h3>
+            <span class="timeline-date">2016 – 2018</span>
+            <span class="timeline-company">Cortana Innovative Technologies</span>
+            <p>Developed custom ERP modules, trained clients, and supported post-deployment operations.</p>
+            <div class="timeline-tags">
+              <span>Database Design</span>
+              <span>Jasper Reports</span>
+              <span>Client Training</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="card fade-in">
       <h2>Technical Skills</h2>
-      <ul class="skills">
-        <li><strong>Languages:</strong> PL/SQL, Python, JavaScript</li>
-        <li><strong>Databases:</strong> Oracle 11g/12c, PostgreSQL</li>
-        <li><strong>Tools:</strong> Oracle Forms, Jasper Reports, WebLogic</li>
-        <li><strong>Concepts:</strong> DB Design, System Architecture, ERP Customization</li>
-      </ul>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Languages</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">PL/SQL</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">HTML/CSS</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-database"></i> Databases</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">Oracle 11g/12c</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">PostgreSQL</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">MySQL</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">MongoDB</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Tools & Frameworks</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">Oracle Forms</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Jasper Reports</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">WebLogic</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">React</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-project-diagram"></i> Concepts</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">Database Design</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">System Architecture</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">ERP Customization</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Project Management</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="education" class="card">
+    <section id="education" class="card fade-in">
       <h2>Education</h2>
-      <ul>
-        <li><strong>B.Tech in Computer Science Engineering</strong> — Government College of Engineering, Karunagappally (2012 – 2015)</li>
-        <li><strong>Diploma in Computer Hardware Maintenance</strong> — Model Polytechnic College, Karunagappally (2009 – 2012)</li>
-      </ul>
+      <div class="education-grid">
+        <div class="education-item">
+          <div class="education-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="education-content">
+            <h3>B.Tech in Computer Science Engineering</h3>
+            <p>Government College of Engineering, Karunagappally</p>
+            <span class="education-date">2012 – 2015</span>
+          </div>
+        </div>
+        <div class="education-item">
+          <div class="education-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <div class="education-content">
+            <h3>Diploma in Computer Hardware Maintenance</h3>
+            <p>Model Polytechnic College, Karunagappally</p>
+            <span class="education-date">2009 – 2012</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="languages" class="card">
+    <section id="languages" class="card fade-in">
       <h2>Languages</h2>
-      <p>English, Spanish, Malayalam, Tamil, Hindi (Basic)</p>
+      <div class="languages-grid">
+        <div class="language-item">
+          <span class="language-name">English</span>
+          <div class="language-level">
+            <span class="filled"></span>
+            <span class="filled"></span>
+            <span class="filled"></span>
+            <span class="filled"></span>
+            <span class="filled"></span>
+          </div>
+          <span class="language-proficiency">Fluent</span>
+        </div>
+        <div class="language-item">
+          <span class="language-name">Spanish</span>
+          <div class="language-level">
+            <span class="filled"></span>
+            <span class="filled"></span>
+            <span class="filled"></span>
+            <span class="filled"></span>
+            <span></span>
+          </div>
+          <span class="language-proficiency">Advanced</span>
+        </div>
+        <div class="language-item">
+          <span class="language-name">Malayalam</span>
+          <div class="language-level">
+            <span class="filled"></span>
+            <span class="filled"></span>
+            <span class="filled"></span>
+            <span class="filled"></span>
+            <span class="filled"></span>
+          </div>
+          <span class="language-proficiency">Native</span>
+        </div>
+        <div class="language-item">
+          <span class="language-name">Tamil</span>
+          <div class="language-level">
+            <span class="filled"></span>
+            <span class="filled"></span>
+            <span class="filled"></span>
+            <span class="filled"></span>
+            <span></span>
+          </div>
+          <span class="language-proficiency">Advanced</span>
+        </div>
+        <div class="language-item">
+          <span class="language-name">Hindi</span>
+          <div class="language-level">
+            <span class="filled"></span>
+            <span class="filled"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span class="language-proficiency">Basic</span>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Jijo David — Built with 💻 and ☕</p>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>Jijo David</h3>
+          <p>Senior Software Engineer specializing in ERP development and database architecture.</p>
+        </div>
+        <div class="footer-contact">
+          <h4>Get In Touch</h4>
+          <div class="contact-links">
+            <a href="mailto:informtojijo@gmail.com">
+              <i class="fas fa-envelope"></i>
+              informtojijo@gmail.com
+            </a>
+            <a href="tel:+97431295329">
+              <i class="fas fa-phone"></i>
+              +974 3129 5329
+            </a>
+            <a href="#">
+              <i class="fas fa-map-marker-alt"></i>
+              Doha, Qatar
+            </a>
+          </div>
+        </div>
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/jijodavid007" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Jijo David — Built with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></p>
+      </div>
+    </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
