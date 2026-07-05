@@ -135,11 +135,14 @@ body {
   transform: translateY(-5px);
 }
 
+/* Scroll indicator (down arrow) centered horizontally */
+/* Scroll indicator positioned a bit higher to stay above the social icons */
 .scroll-indicator {
   position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 60px; /* positioned just above social icons */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   color: var(--white);
   text-decoration: none;
   display: flex;
@@ -152,7 +155,7 @@ body {
 
 .scroll-indicator:hover {
   opacity: 1;
-  transform: translateX(-50%) translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .scroll-indicator i {
